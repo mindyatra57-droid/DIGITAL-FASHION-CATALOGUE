@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Digital Fashion Catalogue for modern clothing stores — collections, new arrivals, product enquiry, WhatsApp catalogue and trial room QR.">
+
+    <title>Digital Fashion Catalogue</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =========================================================
+     LOADER
+========================================================= -->
+<div class="loader" id="loader">
+    <div class="loader-inner">
+        <div class="loader-logo">DF</div>
+        <div class="loader-title">DIGITAL FASHION</div>
+        <div class="loader-subtitle">CATALOGUE</div>
+
+        <div class="loader-fashion-items">
+            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=220&q=80" alt="Fashion look">
+            <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=220&q=80" alt="Fashion look">
+            <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=220&q=80" alt="Fashion look">
+        </div>
+
+        <div class="loader-line">
+            <span></span>
+        </div>
+
+        <p>Curating your collection...</p>
+    </div>
+</div>
+
+
+<!-- =========================================================
+     SCROLL PROGRESS
+========================================================= -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+<header class="site-header" id="siteHeader">
+
+    <a href="#home" class="brand">
+        <span class="brand-mark">DF</span>
+
+        <span class="brand-text">
+            <strong>DIGITAL FASHION</strong>
+            <small>CATALOGUE</small>
+        </span>
+    </a>
+
+
+    <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+    >
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+
+    <nav class="nav-menu" id="navMenu">
+
+        <a href="#home" data-nav="home">Home</a>
+        <a href="#collections" data-nav="collections">Collections</a>
+        <a href="#catalogue" data-nav="catalogue">Catalogue</a>
+        
+        <a href="#store" data-nav="store">Store</a>
+
+        <a href="#catalogue" class="nav-cta">
+            Explore Collection
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+<section class="hero section" id="home">
+
+    <div class="hero-bg-shape shape-one"></div>
+    <div class="hero-bg-shape shape-two"></div>
+
+    <div class="hero-content reveal">
+
+        <span class="eyebrow">
+            MODERN DIGITAL SHOPPING EXPERIENCE
+        </span>
+
+        <h1>
+            Your Collection.
+            <br>
+            <em>Digitally Styled.</em>
+        </h1>
+
+        <p class="hero-description">
+            A premium digital catalogue designed for modern fashion stores —
+            discover collections, view products, share styles and enquire
+            instantly on WhatsApp.
+        </p>
+
+        <div class="hero-actions">
+
+            <a href="#catalogue" class="btn btn-dark">
+                Explore Catalogue
+                <span>→</span>
+            </a>
+
+            <button class="btn btn-light" id="heroShareBtn">
+                Share Catalogue
+                <span>↗</span>
+            </button>
+
+        </div>
+
+        <div class="hero-trust">
+
+            <div>
+                <strong>50+</strong>
+                <span>Demo Styles</span>
+            </div>
+
+            <div>
+                <strong>05</strong>
+                <span>Categories</span>
+            </div>
+
+            <div>
+                <strong>24/7</strong>
+                <span>Digital Access</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-visual reveal">
+
+        <div class="hero-card hero-card-back"></div>
+
+        <div class="hero-card hero-card-main">
+
+            <div class="hero-card-top">
+                <span>NEW COLLECTION</span>
+                <span>01 / 05</span>
+            </div>
+
+            <div class="fashion-visual visual-hero">
+                <div class="fashion-silhouette"></div>
+                <div class="visual-glow"></div>
+            </div>
+
+            <div class="hero-card-bottom">
+                <div>
+                    <small>CURATED STYLE</small>
+                    <strong>Everyday Edit</strong>
+                </div>
+
+                <span class="round-arrow">↗</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     QUICK FEATURES
+========================================================= -->
+<section class="quick-features">
+
+    <div class="quick-feature reveal">
+        <span>01</span>
+        <div>
+            <strong>Complete Look Matching</strong>
+            <small>Find matching pieces instantly</small>
+        </div>
+    </div>
+
+    <div class="quick-feature reveal">
+        <span>02</span>
+        <div>
+            <strong>WhatsApp Catalogue</strong>
+            <small>Instant product enquiry</small>
+        </div>
+    </div>
+
+    <div class="quick-feature reveal">
+        <span>03</span>
+        <div>
+            <strong>Trial Room QR</strong>
+            <small>Scan & browse while shopping</small>
+        </div>
+    </div>
+
+    <div class="quick-feature reveal">
+        <span>04</span>
+        <div>
+            <strong>Mobile Friendly</strong>
+            <small>Designed for every screen</small>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     COLLECTIONS
+========================================================= -->
+<section class="section collections-section" id="collections">
+
+    <div class="section-heading reveal">
+
+        <div>
+            <span class="eyebrow">EXPLORE</span>
+
+            <h2>
+                Shop by
+                <em>Collection</em>
+            </h2>
+        </div>
+
+        <p>
+            Browse different fashion categories and discover
+            styles made for every occasion.
+        </p>
+
+    </div>
+
+
+    <div class="collection-grid">
+
+        <button
+            class="collection-card collection-men reveal"
+            data-category="Men's"
+        >
+            <div class="collection-number">01</div>
+
+            <div class="collection-visual">
+                <div class="collection-person male"></div>
+            </div>
+
+            <div class="collection-info">
+                <small>COLLECTION 01</small>
+                <h3>Men's</h3>
+                <span>Explore →</span>
+            </div>
+        </button>
+
+
+        <button
+            class="collection-card collection-women reveal"
+            data-category="Women's"
+        >
+            <div class="collection-number">02</div>
+
+            <div class="collection-visual">
+                <div class="collection-person female"></div>
+            </div>
+
+            <div class="collection-info">
+                <small>COLLECTION 02</small>
+                <h3>Women's</h3>
+                <span>Explore →</span>
+            </div>
+        </button>
+
+
+        <button
+            class="collection-card collection-saree reveal"
+            data-category="Sarees"
+        >
+            <div class="collection-number">03</div>
+
+            <div class="collection-visual">
+                <div class="fabric-shape"></div>
+            </div>
+
+            <div class="collection-info">
+                <small>COLLECTION 03</small>
+                <h3>Sarees</h3>
+                <span>Explore →</span>
+            </div>
+        </button>
+
+
+        <button
+            class="collection-card collection-western reveal"
+            data-category="Western"
+        >
+            <div class="collection-number">04</div>
+
+            <div class="collection-visual">
+                <div class="western-shape"></div>
+            </div>
+
+            <div class="collection-info">
+                <small>COLLECTION 04</small>
+                <h3>Western</h3>
+                <span>Explore →</span>
+            </div>
+        </button>
+
+
+        <button
+            class="collection-card collection-traditional reveal"
+            data-category="Traditional"
+        >
+            <div class="collection-number">05</div>
+
+            <div class="collection-visual">
+                <div class="traditional-shape"></div>
+            </div>
+
+            <div class="collection-info">
+                <small>COLLECTION 05</small>
+                <h3>Traditional</h3>
+                <span>Explore →</span>
+            </div>
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CATALOGUE
+========================================================= -->
+<section class="section catalogue-section" id="catalogue">
+
+    <div class="section-heading catalogue-heading reveal">
+
+        <div>
+            <span class="eyebrow">DIGITAL CATALOGUE</span>
+
+            <h2>
+                Find Your
+                <em>Style</em>
+            </h2>
+        </div>
+
+        <div class="catalogue-side-info">
+            <p>
+                Select a category or open any product
+                for complete details.
+            </p>
+
+            <strong id="catalogueCount">8 styles</strong>
+        </div>
+
+    </div>
+
+
+    <div class="filter-row reveal">
+
+        <button class="filter-btn active" data-filter="All">
+            All
+        </button>
+
+        <button class="filter-btn" data-filter="Men's">
+            Men's
+        </button>
+
+        <button class="filter-btn" data-filter="Women's">
+            Women's
+        </button>
+
+        <button class="filter-btn" data-filter="Sarees">
+            Sarees
+        </button>
+
+        <button class="filter-btn" data-filter="Western">
+            Western
+        </button>
+
+        <button class="filter-btn" data-filter="Traditional">
+            Traditional
+        </button>
+
+        <button class="filter-btn" data-filter="Accessories">
+            Accessories
+        </button>
+
+        <button class="filter-btn" data-filter="New">
+            New Arrivals
+        </button>
+
+    </div>
+
+
+    <div class="product-grid" id="productGrid"></div>
+
+
+    <div class="empty-state" id="emptyState">
+        <span>✦</span>
+        <h3>No styles found</h3>
+        <p>Try another collection.</p>
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     TRIAL ROOM QR
+========================================================= -->
+<section class="section trial-section">
+
+    <div class="trial-wrapper reveal">
+
+        <div class="trial-copy">
+
+            <span class="eyebrow">SMART TRIAL ROOM</span>
+
+            <h2>
+                Browse While
+                <em>You Try.</em>
+            </h2>
+
+            <p>
+                Place a QR code inside the trial room.
+                Customers can scan it and continue browsing
+                your digital catalogue without leaving the store.
+            </p>
+
+            <div class="trial-points">
+
+                <div>
+                    <span>✓</span>
+                    <strong>Easy to scan</strong>
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    <strong>Mobile friendly</strong>
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    <strong>Instant catalogue access</strong>
+                </div>
+
+            </div>
+
+            <button class="btn btn-light-dark" id="refreshQr">
+                Refresh QR
+                <span>↻</span>
+            </button>
+
+        </div>
+
+
+        <div class="qr-card">
+
+            <div class="qr-frame">
+                <img
+                    id="trialQr"
+                    src=""
+                    alt="Trial room catalogue QR code"
+                >
+
+                <div class="qr-center">
+                    DF
+                </div>
+            </div>
+
+            <strong>SCAN TO BROWSE</strong>
+            <span id="qrStatus">Trial Room Catalogue</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     NEW ARRIVALS BANNER
+========================================================= -->
+<section class="new-arrivals-banner section reveal">
+
+    <div>
+
+        <span class="eyebrow">JUST DROPPED</span>
+
+        <h2>
+            New Season.
+            <br>
+            New <em>Possibilities.</em>
+        </h2>
+
+    </div>
+
+    <div class="new-arrivals-action">
+
+        <p>
+            Fresh styles added to the collection.
+        </p>
+
+        <button class="btn btn-gold" id="newArrivalsBtn">
+            View New Arrivals
+            <span>→</span>
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     STORE CTA
+========================================================= -->
+<section class="section store-section" id="store">
+
+    <div class="store-card reveal">
+
+        <div class="store-content">
+
+            <span class="eyebrow">YOUR DIGITAL STORE</span>
+
+            <h2>
+                Turn Browsing Into
+                <em>Enquiries.</em>
+            </h2>
+
+            <p>
+                Give your customers one simple place to discover
+                your collection, share products and connect with
+                your store instantly.
+            </p>
+
+            <div class="store-actions">
+
+                <button class="btn btn-dark" id="storeWhatsappBtn">
+                    WhatsApp Store
+                    <span>↗</span>
+                </button>
+
+                <button class="btn btn-outline" id="copyCatalogueBtn">
+                    Copy Catalogue Link
+                    <span>⧉</span>
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="store-mark">
+            <span>DF</span>
+            <small>DIGITAL<br>FASHION</small>
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+<footer class="footer">
+
+    <div class="footer-top">
+
+        <div class="footer-brand">
+
+            <div class="footer-logo">DF</div>
+
+            <div>
+                <strong>DIGITAL FASHION</strong>
+                <span>CATALOGUE</span>
+            </div>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="#home">Home</a>
+            <a href="#collections">Collections</a>
+            <a href="#catalogue">Catalogue</a>
+            
+        </div>
+
+
+        <div class="footer-contact">
+
+            <span>SHOP ONLINE EXPERIENCE</span>
+
+            <button id="footerWhatsappBtn">
+                WhatsApp →
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <span>
+            © <span id="year"></span> Digital Fashion Catalogue
+        </span>
+
+        <span>
+            Digital storefront concept for fashion stores
+        </span>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================================================
+     MOBILE BOTTOM BAR
+========================================================= -->
+<div class="mobile-bottom-bar">
+
+    <a href="#catalogue">
+        <span>⌂</span>
+        Catalogue
+    </a>
+
+    <button id="mobileWhatsappBtn">
+        <span>◉</span>
+        WhatsApp
+    </button>
+
+    <a href="#collections">
+        <span>✦</span>
+        Collections
+    </a>
+
+</div>
+
+
+<!-- =========================================================
+     PRODUCT MODAL
+========================================================= -->
+<div
+    class="modal-overlay"
+    id="productModal"
+    aria-hidden="true"
+>
+
+    <div
+        class="product-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modalTitle"
+    >
+
+        <button
+            class="modal-close"
+            id="modalClose"
+            aria-label="Close product"
+        >
+            ×
+        </button>
+
+
+        <div class="modal-visual" id="modalVisual"></div>
+
+
+        <div class="modal-content">
+
+            <div class="modal-top">
+
+                <span class="product-badge" id="modalBadge">
+                    NEW
+                </span>
+
+                <span class="modal-category" id="modalCategory">
+                    CATEGORY
+                </span>
+
+            </div>
+
+
+            <h2 id="modalTitle">
+                Product
+            </h2>
+
+            <div class="modal-price" id="modalPrice">
+                ₹0
+            </div>
+
+            <p id="modalDescription">
+                Product description.
+            </p>
+
+
+            <div class="option-group">
+
+                <span>SIZE</span>
+
+                <div class="option-list" id="sizeOptions">
+
+                    <button>S</button>
+                    <button>M</button>
+                    <button>L</button>
+                    <button>XL</button>
+
+                </div>
+
+            </div>
+
+
+            <div class="option-group">
+
+                <span>COLOUR</span>
+
+                <div class="option-list" id="colourOptions">
+
+                    <button>Black</button>
+                    <button>White</button>
+                    <button>Beige</button>
+
+                </div>
+
+            </div>
+
+
+            <div class="modal-actions">
+
+                <button class="btn btn-dark" id="modalWhatsapp">
+                    Enquire on WhatsApp
+                    <span>↗</span>
+                </button>
+
+                <button class="btn btn-outline" id="modalShare">
+                    Share Product
+                    <span>↗</span>
+                </button>
+
+            </div>
+
+
+            <button
+                class="modal-complete-look"
+                id="modalCompleteLook"
+            >
+                View Complete Look →
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     TOAST
+========================================================= -->
+<div
+    class="toast"
+    id="toast"
+    role="status"
+    aria-live="polite"
+>
+    <span>✓</span>
+    <p>Done</p>
+</div>
+
+
+<!-- =========================================================
+     SCROLL TOP
+========================================================= -->
+<button
+    class="scroll-top"
+    id="scrollTop"
+    aria-label="Scroll to top"
+>
+    ↑
+</button>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
