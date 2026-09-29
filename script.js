@@ -132,7 +132,7 @@ const accessoryProducts = [
     ["Classic Belt",799,"https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=900&q=85"],
     ["Leather Loafers",2199,"https://images.unsplash.com/photo-1615979474401-8a6a344de5bd?auto=format&fit=crop&w=900&q=85"],
     ["Statement Watch",2999,"https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=900&q=85"],
-    ["Classic Tote Bag",1999,"https://images.unsplash.com/photo-1594223274512-ad4803739b7c?auto=format&fit=crop&w=900&q=85"],
+    ["Classic Tote Bag",1999,"https://images.unsplash.com/photo-1594223274512-ad4803739b7c7?auto=format&fit=crop&w=900&q=85"],
     ["Premium Sunglasses",1499,"https://images.unsplash.com/photo-1577803645773-f96470509666?auto=format&fit=crop&w=900&q=85"],
     ["Casual Crossbody Bag",1699,"https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=900&q=85"]
 ];
@@ -216,8 +216,6 @@ const colourOptions = document.getElementById("colourOptions");
 const modalWhatsapp = document.getElementById("modalWhatsapp");
 const modalShare = document.getElementById("modalShare");
 const modalCompleteLook = document.getElementById("modalCompleteLook");
-const refreshQr = document.getElementById("refreshQr");
-const trialQr = document.getElementById("trialQr");
 const newArrivalsBtn = document.getElementById("newArrivalsBtn");
 const copyCatalogueBtn = document.getElementById("copyCatalogueBtn");
 const heroShareBtn = document.getElementById("heroShareBtn");
@@ -253,7 +251,6 @@ document.addEventListener("DOMContentLoaded", () => {
     setupNavigation();
     setupWhatsAppButtons();
     setupSharing();
-    setupQr();
     setupNewArrivals();
     setupCatalogueCopy();
     setupKeyboardControls();
@@ -1081,42 +1078,6 @@ async function shareCurrentProduct() {
     }
     await copyText(`${currentProduct.title} — ₹${currentProduct.price.toLocaleString("en-IN")}\n${window.location.href}`);
     showToast("Product details copied");
-}
-
-/* =========================================================
-   QR — MAIN SITE ONLY, NO EXTERNAL CATALOGUE SITE
-========================================================= */
-function setupQr() {
-    if (!refreshQr || !trialQr) return;
-    generateQr();
-    refreshQr.addEventListener("click", generateQr);
-}
-
-function generateQr() {
-
-    if (!trialQr) return;
-
-    const destination =
-        `${window.location.href.split("#")[0]}#catalogue`;
-
-    const qrUrl =
-        `https://api.qrserver.com/v1/create-qr-code/?size=500x500&margin=10&data=${encodeURIComponent(destination)}`;
-
-    trialQr.src = qrUrl;
-
-    trialQr.alt =
-        "QR code to open the digital fashion catalogue";
-
-    trialQr.classList.remove("qr-disabled");
-
-    trialQr.onerror = () => {
-        trialQr.alt =
-            "QR code could not be loaded";
-
-        showToast("QR service unavailable");
-    };
-
-    showToast("Trial Room QR refreshed");
 }
 
 /* =========================================================
