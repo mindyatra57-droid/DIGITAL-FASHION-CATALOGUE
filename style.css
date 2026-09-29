@@ -586,7 +586,7 @@ h2 em {
     color: white;
     padding: 25px 7%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
@@ -1049,111 +1049,6 @@ h2 em {
 .empty-state p {
     color: var(--muted);
     font-size: 13px;
-}
-
-
-/* =========================================================
-   TRIAL ROOM
-========================================================= */
-
-.trial-section {
-    background: var(--dark);
-    color: white;
-}
-
-.trial-wrapper {
-    max-width: 1050px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 360px;
-    align-items: center;
-    gap: 90px;
-}
-
-.trial-copy h2 {
-    font-family: Georgia, serif;
-    font-size: clamp(42px,5vw,70px);
-    font-weight: 400;
-    line-height: 1;
-}
-
-.trial-copy p {
-    color: #aaa;
-    max-width: 560px;
-    font-size: 14px;
-    line-height: 1.8;
-    margin: 24px 0;
-}
-
-.trial-points {
-    display: grid;
-    gap: 10px;
-    margin-bottom: 27px;
-}
-
-.trial-points div {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.trial-points span {
-    color: var(--gold-light);
-}
-
-.trial-points strong {
-    font-size: 11px;
-    font-weight: 400;
-}
-
-.qr-card {
-    background: white;
-    color: var(--dark);
-    padding: 28px;
-    text-align: center;
-    box-shadow: 0 25px 60px rgba(0,0,0,.28);
-}
-
-.qr-frame {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 1;
-    background: #fff;
-    display: grid;
-    place-items: center;
-    overflow: hidden;
-}
-
-.qr-frame img {
-    width: 88%;
-    height: 88%;
-    object-fit: contain;
-}
-
-.qr-center {
-    position: absolute;
-    width: 38px;
-    height: 38px;
-    display: grid;
-    place-items: center;
-    background: white;
-    border: 1px solid #111;
-    font-size: 9px;
-    font-weight: 700;
-}
-
-.qr-card > strong {
-    display: block;
-    margin-top: 20px;
-    font-size: 10px;
-    letter-spacing: 2px;
-}
-
-.qr-card > span {
-    display: block;
-    color: #777;
-    font-size: 9px;
-    margin-top: 6px;
 }
 
 
@@ -1896,11 +1791,6 @@ a:focus-visible {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .trial-wrapper {
-        grid-template-columns: 1fr 300px;
-        gap: 45px;
-    }
-
     .look-complete-grid {
         grid-template-columns: 1fr;
     }
@@ -2038,7 +1928,7 @@ a:focus-visible {
     }
 
     .quick-features {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         padding: 20px 5%;
     }
 
@@ -2118,16 +2008,6 @@ a:focus-visible {
 
     .product-price {
         font-size: 11px;
-    }
-
-    .trial-wrapper {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .qr-card {
-        width: min(290px,100%);
-        margin: auto;
     }
 
     .look-side {
@@ -2318,6 +2198,8 @@ a:focus-visible {
     }
 
 }
+
+
 /* =========================================================
    FINAL POLISH — IMAGE FIRST / FASHION MATCHING
 ========================================================= */
@@ -2326,13 +2208,17 @@ a:focus-visible {
 .scroll-progress {
     display: none !important;
 }
-html, body {
+
+html,
+body {
     border-top: 0 !important;
 }
+
 
 /* =========================================================
    FAST LOADER + CLOTHING VISUALS
 ========================================================= */
+
 .loader-fashion-items {
     display: flex;
     justify-content: center;
@@ -2361,13 +2247,22 @@ html, body {
 }
 
 @keyframes loaderClothes {
-    0%, 100% { transform: translateY(12px) rotate(-2deg); opacity: .55; }
-    50% { transform: translateY(-4px) rotate(2deg); opacity: 1; }
+    0%, 100% {
+        transform: translateY(12px) rotate(-2deg);
+        opacity: .55;
+    }
+
+    50% {
+        transform: translateY(-4px) rotate(2deg);
+        opacity: 1;
+    }
 }
+
 
 /* =========================================================
    HERO — 5 SLIDE FASHION SHOWCASE
 ========================================================= */
+
 .visual-hero {
     background-position: center 25% !important;
     background-size: cover !important;
@@ -2385,9 +2280,11 @@ html, body {
     display: none !important;
 }
 
+
 /* =========================================================
    COLLECTION CARDS — REAL IMAGES
 ========================================================= */
+
 .collection-men .collection-visual,
 .collection-women .collection-visual,
 .collection-saree .collection-visual,
@@ -2401,15 +2298,19 @@ html, body {
 .collection-men .collection-visual {
     background-image: url("https://my.sacoorbrothers.com/cdn/shop/files/8e9ef51f20a87ab53ca98000f5fd3ad9.jpg?crop=center&height=1200&v=1751032001&width=1200") !important;
 }
+
 .collection-women .collection-visual {
     background-image: url("https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=85") !important;
 }
+
 .collection-saree .collection-visual {
     background-image: url("https://www.bharatsthali.com/cdn/shop/products/2_5445e0c7-d815-40ad-9137-7f76a5ebb87b.jpg?v=1641891200&width=1080") !important;
 }
+
 .collection-western .collection-visual {
     background-image: url("https://down-br.img.susercontent.com/file/br-11134207-7r98o-lwmt2ersca6q32") !important;
 }
+
 .collection-traditional .collection-visual {
     background-image: url("https://suvidhafashion.com/cdn/shop/files/SONIYA.jpg?v=1729506169") !important;
 }
@@ -2421,9 +2322,11 @@ html, body {
     display: none !important;
 }
 
+
 /* =========================================================
    PRODUCT GRID — REAL PHOTOS
 ========================================================= */
+
 .product-image {
     position: relative !important;
     overflow: hidden !important;
@@ -2449,9 +2352,11 @@ html, body {
     display: none !important;
 }
 
+
 /* =========================================================
    MODAL — REAL PRODUCT IMAGE
 ========================================================= */
+
 .modal-visual {
     overflow: hidden !important;
     background: #e8e0d5 !important;
@@ -2464,9 +2369,11 @@ html, body {
     display: block !important;
 }
 
+
 /* =========================================================
    COMPLETE LOOK MATCHING PANEL
 ========================================================= */
+
 .match-panel {
     margin-top: 18px;
     padding: 18px;
@@ -2560,7 +2467,13 @@ html, body {
     margin-top: 10px;
 }
 
+
+/* =========================================================
+   MOBILE — FINAL POLISH
+========================================================= */
+
 @media (max-width: 700px) {
+
     .loader-fashion-items img {
         width: 48px;
         height: 70px;
@@ -2581,4 +2494,5 @@ html, body {
     .match-panel-head h3 {
         font-size: 20px;
     }
+
 }
